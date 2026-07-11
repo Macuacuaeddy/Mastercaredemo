@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our full list of residential and commercial plumbing and home repair services. MasterCare handles everything from leak repairs to HVAC maintenance.">
+    <title>Our Services – MasterCare Plumbing & Repair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--bg-dark-forest);
+            color: var(--text-white);
+            padding: 140px 0 80px 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.75rem;
+            margin-bottom: 12px;
+        }
+        .page-header p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .services-detail-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            padding: 80px 0;
+        }
+        .service-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .service-row:nth-child(even) {
+            direction: rtl;
+        }
+        .service-row:nth-child(even) .service-desc {
+            direction: ltr;
+        }
+        .service-img-wrapper {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--box-shadow);
+        }
+        .service-desc h2 {
+            font-size: 2rem;
+            color: var(--bg-dark-forest);
+            margin-bottom: 16px;
+        }
+        .service-desc p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        .bullet-list {
+            list-style: none;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .bullet-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .bullet-list svg {
+            color: var(--bg-dark-forest);
+        }
+        @media (max-width: 768px) {
+            .service-row {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .service-row:nth-child(even) {
+                direction: ltr;
+            }
+            .bullet-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header style="position: absolute; background-color: transparent;">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="color: var(--accent-lime);"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Master<span>Care</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services" class="active">Services</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html#contact" class="btn btn-lime hidden-18hhxe7">Get Free Estimate</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Plumbing & Repair Services</h1>
+            <p>We provide a comprehensive range of professional installation, repair, and inspection services to protect your home's infrastructure.</p>
+        </div>
+    </section>
+
+    <!-- Services Detail List -->
+    <section class="container">
+        <div class="services-detail-grid">
+            <!-- Row 1 -->
+            <div class="service-row">
+                <div class="service-img-wrapper">
+                    <img src="images/drain_clearing.png" alt="Plumbing leak repair and pipe restoration">
+                </div>
+                <div class="service-desc">
+                    <h2>General Plumbing Services</h2>
+                    <p>Our licensed plumbers handle all core plumbing repairs, pipe installations, leak detection, and pipeline unclogging. We combine expert craftmanship with durable plumbing fittings to deliver long-lasting plumbing infrastructure.</p>
+                    <ul class="bullet-list">
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Drain cleaning & snakes</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Leaky pipe repairs</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Emergency leak response</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Copper line repiping</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-dark">Request This Service</a>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="service-row">
+                <div class="service-img-wrapper">
+                    <img src="images/water_heater_repair.png" alt="Appliance water heater installation">
+                </div>
+                <div class="service-desc">
+                    <h2>Appliance & Water Heaters</h2>
+                    <p>Keep your hot water running efficiently. We install and service high-performance tank and tankless water heating systems. We help you choose the right system to reduce energy consumption and lower utility bills.</p>
+                    <ul class="bullet-list">
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Tankless installations</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Water heater flushing</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Thermostat repair</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Washing machine hookups</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-dark">Request This Service</a>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="service-row">
+                <div class="service-img-wrapper">
+                    <img src="images/disposal_wiring.png" alt="Wiring waste disposal unit">
+                </div>
+                <div class="service-desc">
+                    <h2>Disposal & Pump Electrical</h2>
+                    <p>Under-sink garbage disposals, sump pumps, and ejectors require proper electrical wiring and plumbing alignments to prevent backups. Our technicians ensure safe, code-compliant electrical hookups for your waste systems.</p>
+                    <ul class="bullet-list">
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Sump pump installs</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Garbage disposal wiring</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Backflow preventer lines</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Control panel checkups</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-dark">Request This Service</a>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="service-row">
+                <div class="service-img-wrapper">
+                    <img src="images/boiler_maintenance.png" alt="HVAC Boiler maintenance">
+                </div>
+                <div class="service-desc">
+                    <h2>Boiler & HVAC Systems</h2>
+                    <p>Ensure reliable home heating during winter. We service home boilers, baseboards, heat loop piping, and HVAC cooling line pressure. Regular boiler checks prevent emergency breakdowns and maintain peak energy efficiency.</p>
+                    <ul class="bullet-list">
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Annual boiler servicing</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Radiant heating checks</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Pressure valve checks</li>
+                        <li><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> Leak prevention flushes</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-dark">Request This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <span class="footer-logo">Master<span>Care</span></span>
+                <p>Providing premium residential and commercial plumbing solutions since 2015. Certified local technicians on call 24/7.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        350 7 Avenue SW, Calgary, AB, Canada
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        +1 (234) 567-890
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Drain Cleaning & Unclogging</a></li>
+                    <li><a href="services.html">Water Heater Installation</a></li>
+                    <li><a href="services.html">Pipe Leak Repair</a></li>
+                    <li><a href="services.html">Sump Pump Wiring</a></li>
+                    <li><a href="services.html">Bathroom Fixture Fitouts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Our Story</a></li>
+                    <li><a href="services.html">Our Services Overview</a></li>
+                    <li><a href="contact.html">Request An Estimate</a></li>
+                    <li><a href="contact.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for helpful home repair tips and updates from our experts.</p>
+                <form class="newsletter-form" action="#" onsubmit="alert('Subscribed to Demo Newsletter!'); return false;">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-lime" style="padding: 12px 20px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MasterCare Plumbing & Repair. All Rights Reserved. (Demo Presentation Site)</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
