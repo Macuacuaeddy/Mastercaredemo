@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about MasterCare Plumbing & Repair. Serving homeowners since 2015 with high-quality plumbing, water heater, and heating services.">
+    <title>About Us – MasterCare Plumbing & Repair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--bg-dark-forest);
+            color: var(--text-white);
+            padding: 140px 0 80px 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.75rem;
+            margin-bottom: 12px;
+        }
+        .page-header p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .about-story {
+            padding: 80px 0;
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .story-text h2 {
+            font-size: 2.25rem;
+            color: var(--bg-dark-forest);
+            margin-bottom: 20px;
+        }
+        .story-text p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+        .story-img-container {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--box-shadow);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 80px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--bg-gray);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-lime);
+            color: var(--bg-dark-forest);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+        }
+        .feature-item h3 {
+            font-size: 1.2rem;
+            color: var(--bg-dark-forest);
+            margin-bottom: 10px;
+        }
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header style="position: absolute; background-color: transparent;">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="color: var(--accent-lime);"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Master<span>Care</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about" class="active">About Us</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="index.html#contact" class="btn btn-lime hidden-18hhxe7">Get Free Estimate</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About MasterCare Services</h1>
+            <p>Serving homeowners with a perfect balance of quality craftsmanship, upfront pricing, and absolute reliability.</p>
+        </div>
+    </section>
+
+    <!-- About Story Section -->
+    <section class="about-story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text">
+                    <span class="section-tag">Our History</span>
+                    <h2>Fixing leaks & restoring comfort every day since 2015</h2>
+                    <p>For over a decade, MasterCare has provided local homeowners with premium, dependable plumbing and home repair services. We started with a single truck and a commitment to transparent service. Today, we are proud to serve thousands of happy customers with a full fleet of response units.</p>
+                    <p>Our core philosophy is simple: diagnose the issue correctly, explain the solution clearly, give an upfront price before any work begins, and back every single repair with an ironclad service warranty.</p>
+                    <p>Whether you have a minor faucet drip or require emergency main sewer pipe excavations, our team combines the expert technical diagnostics, high-performance equipment, and respectful customer service you deserve.</p>
+                </div>
+                <div class="story-img-container">
+                    <img src="images/team_collaboration.png" alt="Collaborative plumbing planning">
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3>Fully Licensed & Insured</h3>
+                    <p>All of our field technicians are background-checked, certified, and fully insured. We operate strictly in compliance with all local codes.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3>Upfront Written Quotes</h3>
+                    <p>No mystery fees, no hourly tricks. You will get a detailed flat-rate price quote detailing all work before our technicians touch a tool.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3>Durable Service Warranties</h3>
+                    <p>We stand behind the quality of our repairs. All parts and labor are guaranteed with warranty protection to give you ultimate peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <span class="footer-logo">Master<span>Care</span></span>
+                <p>Providing premium residential and commercial plumbing solutions since 2015. Certified local technicians on call 24/7.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        350 7 Avenue SW, Calgary, AB, Canada
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        +1 (234) 567-890
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Drain Cleaning & Unclogging</a></li>
+                    <li><a href="services.html">Water Heater Installation</a></li>
+                    <li><a href="services.html">Pipe Leak Repair</a></li>
+                    <li><a href="services.html">Sump Pump Wiring</a></li>
+                    <li><a href="services.html">Bathroom Fixture Fitouts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Our Story</a></li>
+                    <li><a href="services.html">Our Services Overview</a></li>
+                    <li><a href="contact.html">Request An Estimate</a></li>
+                    <li><a href="contact.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe for helpful home repair tips and updates from our experts.</p>
+                <form class="newsletter-form" action="#" onsubmit="alert('Subscribed to Demo Newsletter!'); return false;">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-lime" style="padding: 12px 20px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MasterCare Plumbing & Repair. All Rights Reserved. (Demo Presentation Site)</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
